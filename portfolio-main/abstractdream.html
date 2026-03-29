@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yannis Aribot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Yannis Aribot</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="index.html">Retour</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Yannis Aribot</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<section class="project-page">
+
+  <!-- HEADER -->
+  <h1 class="title">Abstract Dream</h1>
+  <p class="section__text__p1">Programmation Gameplay / UI</p>
+
+  <!-- IMAGE PRINCIPALE -->
+  <div class="principal-project-img">
+    <img src="./assets/AbstractDream/AbstractDreamCover.jpg" class="main-project-img" />
+  </div>
+
+  <!-- INFOS RAPIDES -->
+  <div class="about-containers">
+
+    <div class="details-container">
+      <h3>📅 Durée</h3>
+      <p>1 semaine</p>
+    </div>
+
+    <div class="details-container">
+      <h3>👥 Équipe</h3>
+      <p>1 personnes</p>
+    </div>
+
+    <div class="details-container">
+      <h3>🛠️ Technologies</h3>
+      <p>Unity, C#</p>
+    </div>
+
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="text-container">
+    <h2>📖 Description</h2>
+    <p>
+      Abstract Dream est un petit projet de travail sur le level Design. le but de ce projet est de travailler 
+      sur la perspective du niveau pour tromper le joueur. La vue isométrique peut créer une situation ou 
+      le joueur va vouloir sauter d'une plateforme à une autre mais va réaliser que ce saut est impossible 
+      car la plateforme qu'il veut rejoindre n'est pas aussi proche que la caméra nous fait croire.
+    </p>
+  </div>
+
+  <!-- TON RÔLE -->
+  <div class="text-container">
+    <h2>🎯 Mon rôle</h2>
+    <p>
+      - programmeur Gameplay<br>
+      - Programmeur UI<br>
+    </p>
+  </div>
+
+  <!-- PROBLÈMES / SOLUTIONS -->
+  <div class="text-container">
+    <h2>⚡ Challenges</h2>
+    <p>
+      Le plus gros challenge sur ce projet a été de créer un shader pour voir au travers des murs. 
+    </p>
+  </div>
+
+  <div class="challenge-item">
+
+    <div class="challenge-text">
+      <h3>🎯 Problème : Créer un shader pour voir le joueur au travers des murs</h3>
+      <p>
+      Ce shader qu'on applique aux environnements consiste grossièrement en un masque qui prends la prosition du joueur et qui se déclanche via un 
+      raycast qui part de la caméra jusqu'au joueur. Si le rayon touche un mur à qui on a appliqué le shader, alors on déclance 
+      le masque, qui créer un effet cut out sur le mur au niveau de la position du joueur, ce qui nous permet de le voir au travers.
+      </p>
+    </div>
+
+    <div class="challenge-image">
+      <img src="./assets/AbstractDream/AD_Background.jpg" alt="Performance issue" />
+    </div>
+
+  </div>
+
+  <div class="challenge-item reverse" style="display : none;">
+
+    <div class="challenge-text">
+      <h3>🎯 Problème : Intégrer et programmer l'UI</h3>
+      <p>
+        Comment programmer l'Ui pour paramètrer la simulation (nombre et type d'entités ennemis, type d'armement, etc...)?
+      </p>
+
+      <p>
+        👉 Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
+        Pour le replay le systême rejoue par interpolation les datas capturés pour reconstruire l'action de la scène.
+      </p>
+    </div>
+
+    <div class="challenge-image">
+      <img src="./assets/Simdav/SimulationPlayer4.jpg" alt="Performance issue" />
+    </div>
+
+  </div>
+
+  <h2 calss="gallerie-title" style= "text-align: center;">Vidéo</h2></br>
+  <div class=" vidéo-container">
+    <video controls width="100%">
+      <source src="./assets/AbstractDream/AbstractDreamVid.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- GALERIE -->
+    <!-- <h2 calss="gallerie-title" style= "text-align: center;">Gallerie</h2> -->
+  <div class="project_gallerie_container" style="display : none;">
+    <img src="./assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
+    <img src="./assets/Resilience/Entity.gif" class="project_gallerie_img" />
+  </div>
+
+  <!-- BOUTONS -->
+  <div class="btn-container">
+    <button class="btn btn-color-2"
+      onclick="location.href='index.html'">
+      Retour
+    </button>
+  </div>
+
+</section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container" style="display : none">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

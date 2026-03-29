@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yannis Aribot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Yannis Aribot</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="index.html">Retour</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Yannis Aribot</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<section class="project-page">
+
+  <!-- HEADER -->
+  <h1 class="title">Neomars XIII</h1>
+  <p class="section__text__p1">3D models / Tech Art</p>
+
+  <!-- IMAGE PRINCIPALE -->
+  <div class="principal-project-img">
+    <img src="./assets/Neomars/NeomarsLogo.png" class="main-project-img" />
+  </div>
+
+  <!-- INFOS RAPIDES -->
+  <div class="about-containers">
+
+    <div class="details-container">
+      <h3>📅 Durée</h3>
+      <p>1 mois</p>
+    </div>
+
+    <div class="details-container">
+      <h3>👥 Équipe</h3>
+      <p>5 personnes</p>
+    </div>
+
+    <div class="details-container">
+      <h3>🛠️ Technologies</h3>
+      <p>Unity, Blender, Shader Graph</p>
+    </div>
+
+  </div>
+
+  <!-- DESCRIPTION -->
+  <div class="text-container">
+    <h2>📖 Description</h2>
+    <p>
+      Neomars XIII vous transporte dans un Marseille néo-futuriste, baptisé Neo-Massilia. 
+      Vous incarnez un joueur de pétanque débutant. Explorez la ville et affrontez les meilleurs joueurs qui 
+      la dominent dans une partie de pétanque futuriste, enrichie de nouvelles règles !
+      Neomars XIII est un projet sur lequel j'ai travaillé en tant que graphiste 3D et Technical artist.
+    </p>
+  </div>
+
+  <!-- TON RÔLE -->
+  <div class="text-container">
+    <h2>🎯 Mon rôle</h2>
+    <p>
+      - graphiste 3D<br>
+      - Technical Artist<br>
+    </p>
+  </div>
+
+  <!-- PROBLÈMES / SOLUTIONS -->
+  <div class="text-container">
+    <h2>⚡ Challenges</h2>
+    <p>
+      Les principaux défis étaient, de créer un personnage low poly réutilisable pour créer les PNJ et un effet de loading rétro d'assets 3D 
+      pour les terrains de pétanque. 
+    </p>
+  </div>
+
+  <div class="challenge-item">
+
+    <div class="challenge-text">
+      <h3>🎯 Problème : un personnage réutilisable pour les PNJ</h3>
+      <p>
+        Comment créer un unique personnage pour peupler toute la zone de gameplay et rendre l'expérence plus vivante ? 
+      </p>
+
+      <p>
+        👉 Solution : Création d'une base de personnage neutre et définir son genre et son style par ses habits. J'ai créé un personnage 
+        de base en low poly et créé différents vêtements à partir de sa topology, de ce fait on peut apporter des modifications au vêtement 
+        (dans une certaine meusure) tout en gardans le rig et le weight paint du model de base.
+      </p>
+    </div>
+
+    <div class="challenge-image">
+      <img src="./assets/Neomars/Clothes.gif" alt="Performance issue" />
+    </div>
+
+  </div>
+
+  <div class="challenge-item reverse">
+
+    <div class="challenge-text">
+      <h3>🎯 Problème : Créer un effet de loading rétro d'assets 3D pour les terrains de pétanque</h3>
+      <p>
+        Comment créer visuellement un effet rétro de loading d'asset 3D de sorte à ce que le joueur comprenne qu'il est dans une simulation 
+        et que le terrain se charge sous ses yeux ?.
+      </p>
+
+      <p>
+        👉 Solution : crééer un shader qui combine deux textures et un effet de dissolve vertical. le shader se compose de deux masques, 
+        un qui applique une texture procédurale de cadriage (rétro, rétro wave, etc...) via un effet de dissolve vertical, et un autre 
+        masque qui lui applique la texture finale via aussi un effet de dissolve vertical. Cet effet accentue la senstation d'être dans 
+        une simulation.
+      </p>
+    </div>
+
+    <div class="challenge-image">
+      <img src="./assets/Neomars/loadShader.gif" alt="Performance issue" />
+    </div>
+
+  </div>
+
+  <h2 calss="gallerie-title" style= "text-align: center;">Vidéo</h2></br>
+  <div class=" vidéo-container">
+    <video controls width="100%">
+      <source src="./assets/Neomars/NeomarsTrailer 1080p.mp4" type="video/mp4">
+    </video>
+  </div>
+  <!-- GALERIE -->
+    <!-- <h2 calss="gallerie-title" style= "text-align: center;">Gallerie</h2> -->
+  <div class="project_gallerie_container" style="display : none;">
+    <img src="./assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
+    <img src="./assets/Resilience/Entity.gif" class="project_gallerie_img" />
+  </div>
+
+  <!-- BOUTONS -->
+  <div class="btn-container">
+    <button class="btn btn-color-2"
+      onclick="location.href='index.html'">
+      Retour
+    </button>
+  </div>
+
+</section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container" style="display : none">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
