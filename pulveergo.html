@@ -39,12 +39,12 @@
 <section class="project-page">
 
   <!-- HEADER -->
-  <h1 class="title">Abstract Dream</h1>
-  <p class="section__text__p1">Programmation Gameplay / UI</p>
+  <h1 class="title">Pulve Ergo</h1>
+  <p class="section__text__p1">Programmation Gameplay VR / UI</p>
 
   <!-- IMAGE PRINCIPALE -->
   <div class="principal-project-img">
-    <img src="./assets/AbstractDream/AbstractDreamCover.jpg" class="main-project-img" />
+    <img src="./portfolio-main/assets/PulveErgo/PulveErgo.png" class="main-project-img" />
   </div>
 
   <!-- INFOS RAPIDES -->
@@ -52,12 +52,12 @@
 
     <div class="details-container">
       <h3>📅 Durée</h3>
-      <p>1 semaine</p>
+      <p>11 mois</p>
     </div>
 
     <div class="details-container">
       <h3>👥 Équipe</h3>
-      <p>1 personnes</p>
+      <p>3 personnes</p>
     </div>
 
     <div class="details-container">
@@ -71,10 +71,11 @@
   <div class="text-container">
     <h2>📖 Description</h2>
     <p>
-      Abstract Dream est un petit projet de travail sur le level Design. le but de ce projet est de travailler 
-      sur la perspective du niveau pour tromper le joueur. La vue isométrique peut créer une situation ou 
-      le joueur va vouloir sauter d'une plateforme à une autre mais va réaliser que ce saut est impossible 
-      car la plateforme qu'il veut rejoindre n'est pas aussi proche que la caméra nous fait croire.
+      Pulve Ergo est un projet de simulation viticole réalisé pendant mon apprentissage chez Studio Nyx. le but 
+      de ce projet est de sensibiliser les constucteur de pulvérisateurs de pesticide sur la contamination des 
+      utilisateurs. La simulation re créer une journée type d'un viticulteur et à la fin de celle ci on 
+      comptabilise le nombre de contacte avec des surfaces contaminées par des produits toxique. 
+      Le projet n'a pas eu le temps d'être finalisé pendant mon temps chez Studio Nyx.
     </p>
   </div>
 
@@ -82,7 +83,7 @@
   <div class="text-container">
     <h2>🎯 Mon rôle</h2>
     <p>
-      - programmeur Gameplay<br>
+      - programmeur Gameplay VR<br>
       - Programmeur UI<br>
     </p>
   </div>
@@ -91,23 +92,28 @@
   <div class="text-container">
     <h2>⚡ Challenges</h2>
     <p>
-      Le plus gros challenge sur ce projet a été de créer un shader pour voir au travers des murs. 
+      En plus d'intégrer le systême de manipulation d'objets en VR, le principal challange a été d'avoir un systême d' 
+      enregistrement de scène pour analyser le déroulement de la simulation une fois qu'elle est terminé.
     </p>
   </div>
 
   <div class="challenge-item">
 
     <div class="challenge-text">
-      <h3>🎯 Problème : Créer un shader pour voir le joueur au travers des murs</h3>
+      <h3>🎯 Problème : Avoir un systême d'enregistrement de scène</h3>
       <p>
-      Ce shader qu'on applique aux environnements consiste grossièrement en un masque qui prends la prosition du joueur et qui se déclanche via un 
-      raycast qui part de la caméra jusqu'au joueur. Si le rayon touche un mur à qui on a appliqué le shader, alors on déclance 
-      le masque, qui créer un effet cut out sur le mur au niveau de la position du joueur, ce qui nous permet de le voir au travers.
+        Comment enregistrer une scène Unity pour la rejouer de plusieurs angle de caméra différentes ? 
+      </p>
+
+      <p>
+        👉 Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
+        Pour le replay le systême rejoue par interpolation les datas capturés pour reconstruire l'action de la scène. 
+        Si on a placé plusieurs caméra dans notre scène on pourrait alors revoir la scène sous plusieurs angles pendant le replay
       </p>
     </div>
 
     <div class="challenge-image">
-      <img src="./assets/AbstractDream/AD_Background.jpg" alt="Performance issue" />
+      <img src="./portfolio-main/assets/PulveErgo/PulveErgoMontage.png" alt="Performance issue" />
     </div>
 
   </div>
@@ -127,7 +133,7 @@
     </div>
 
     <div class="challenge-image">
-      <img src="./assets/Simdav/SimulationPlayer4.jpg" alt="Performance issue" />
+      <img src="./portfolio-main/assets/Simdav/SimulationPlayer4.jpg" alt="Performance issue" />
     </div>
 
   </div>
@@ -135,14 +141,14 @@
   <h2 calss="gallerie-title" style= "text-align: center;">Vidéo</h2></br>
   <div class=" vidéo-container">
     <video controls width="100%">
-      <source src="./assets/AbstractDream/AbstractDream.mp4" type="video/mp4">
+      <source src="./portfolio-main/assets/PulveErgo/PULVEERGO_Alpha_V0.5.1_20241003_Demo.mp4" type="video/mp4">
     </video>
   </div>
   <!-- GALERIE -->
     <!-- <h2 calss="gallerie-title" style= "text-align: center;">Gallerie</h2> -->
   <div class="project_gallerie_container" style="display : none;">
-    <img src="./assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
-    <img src="./assets/Resilience/Entity.gif" class="project_gallerie_img" />
+    <img src="./portfolio-main/assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
+    <img src="./portfolio-main/assets/Resilience/Entity.gif" class="project_gallerie_img" />
   </div>
 
   <!-- BOUTONS -->

@@ -39,12 +39,12 @@
 <section class="project-page">
 
   <!-- HEADER -->
-  <h1 class="title">Neomars XIII</h1>
-  <p class="section__text__p1">3D models / Tech Art</p>
+  <h1 class="title">Abstract Dream</h1>
+  <p class="section__text__p1">Programmation Gameplay / UI</p>
 
   <!-- IMAGE PRINCIPALE -->
   <div class="principal-project-img">
-    <img src="./assets/Neomars/NeomarsLogo.png" class="main-project-img" />
+    <img src="./portfolio-main/assets/AbstractDream/AbstractDreamCover.jpg" class="main-project-img" />
   </div>
 
   <!-- INFOS RAPIDES -->
@@ -52,17 +52,17 @@
 
     <div class="details-container">
       <h3>📅 Durée</h3>
-      <p>1 mois</p>
+      <p>1 semaine</p>
     </div>
 
     <div class="details-container">
       <h3>👥 Équipe</h3>
-      <p>5 personnes</p>
+      <p>1 personnes</p>
     </div>
 
     <div class="details-container">
       <h3>🛠️ Technologies</h3>
-      <p>Unity, Blender, Shader Graph</p>
+      <p>Unity, C#</p>
     </div>
 
   </div>
@@ -71,10 +71,10 @@
   <div class="text-container">
     <h2>📖 Description</h2>
     <p>
-      Neomars XIII vous transporte dans un Marseille néo-futuriste, baptisé Neo-Massilia. 
-      Vous incarnez un joueur de pétanque débutant. Explorez la ville et affrontez les meilleurs joueurs qui 
-      la dominent dans une partie de pétanque futuriste, enrichie de nouvelles règles !
-      Neomars XIII est un projet sur lequel j'ai travaillé en tant que graphiste 3D et Technical artist.
+      Abstract Dream est un petit projet de travail sur le level Design. le but de ce projet est de travailler 
+      sur la perspective du niveau pour tromper le joueur. La vue isométrique peut créer une situation ou 
+      le joueur va vouloir sauter d'une plateforme à une autre mais va réaliser que ce saut est impossible 
+      car la plateforme qu'il veut rejoindre n'est pas aussi proche que la caméra nous fait croire.
     </p>
   </div>
 
@@ -82,8 +82,8 @@
   <div class="text-container">
     <h2>🎯 Mon rôle</h2>
     <p>
-      - graphiste 3D<br>
-      - Technical Artist<br>
+      - programmeur Gameplay<br>
+      - Programmeur UI<br>
     </p>
   </div>
 
@@ -91,51 +91,43 @@
   <div class="text-container">
     <h2>⚡ Challenges</h2>
     <p>
-      Les principaux défis étaient, de créer un personnage low poly réutilisable pour créer les PNJ et un effet de loading rétro d'assets 3D 
-      pour les terrains de pétanque. 
+      Le plus gros challenge sur ce projet a été de créer un shader pour voir au travers des murs. 
     </p>
   </div>
 
   <div class="challenge-item">
 
     <div class="challenge-text">
-      <h3>🎯 Problème : un personnage réutilisable pour les PNJ</h3>
+      <h3>🎯 Problème : Créer un shader pour voir le joueur au travers des murs</h3>
       <p>
-        Comment créer un unique personnage pour peupler toute la zone de gameplay et rendre l'expérence plus vivante ? 
-      </p>
-
-      <p>
-        👉 Solution : Création d'une base de personnage neutre et définir son genre et son style par ses habits. J'ai créé un personnage 
-        de base en low poly et créé différents vêtements à partir de sa topology, de ce fait on peut apporter des modifications au vêtement 
-        (dans une certaine meusure) tout en gardans le rig et le weight paint du model de base.
+      Ce shader qu'on applique aux environnements consiste grossièrement en un masque qui prends la prosition du joueur et qui se déclanche via un 
+      raycast qui part de la caméra jusqu'au joueur. Si le rayon touche un mur à qui on a appliqué le shader, alors on déclance 
+      le masque, qui créer un effet cut out sur le mur au niveau de la position du joueur, ce qui nous permet de le voir au travers.
       </p>
     </div>
 
     <div class="challenge-image">
-      <img src="./assets/Neomars/Clothes.gif" alt="Performance issue" />
+      <img src="./portfolio-main/assets/AbstractDream/AD_Background.jpg" alt="Performance issue" />
     </div>
 
   </div>
 
-  <div class="challenge-item reverse">
+  <div class="challenge-item reverse" style="display : none;">
 
     <div class="challenge-text">
-      <h3>🎯 Problème : Créer un effet de loading rétro d'assets 3D pour les terrains de pétanque</h3>
+      <h3>🎯 Problème : Intégrer et programmer l'UI</h3>
       <p>
-        Comment créer visuellement un effet rétro de loading d'asset 3D de sorte à ce que le joueur comprenne qu'il est dans une simulation 
-        et que le terrain se charge sous ses yeux ?.
+        Comment programmer l'Ui pour paramètrer la simulation (nombre et type d'entités ennemis, type d'armement, etc...)?
       </p>
 
       <p>
-        👉 Solution : crééer un shader qui combine deux textures et un effet de dissolve vertical. le shader se compose de deux masques, 
-        un qui applique une texture procédurale de cadriage (rétro, rétro wave, etc...) via un effet de dissolve vertical, et un autre 
-        masque qui lui applique la texture finale via aussi un effet de dissolve vertical. Cet effet accentue la senstation d'être dans 
-        une simulation.
+        👉 Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
+        Pour le replay le systême rejoue par interpolation les datas capturés pour reconstruire l'action de la scène.
       </p>
     </div>
 
     <div class="challenge-image">
-      <img src="./assets/Neomars/loadShader.gif" alt="Performance issue" />
+      <img src="./portfolio-main/assets/Simdav/SimulationPlayer4.jpg" alt="Performance issue" />
     </div>
 
   </div>
@@ -143,14 +135,14 @@
   <h2 calss="gallerie-title" style= "text-align: center;">Vidéo</h2></br>
   <div class=" vidéo-container">
     <video controls width="100%">
-      <source src="./assets/Neomars/NeomarsTrailer.mp4" type="video/mp4">
+      <source src="./portfolio-main/assets/AbstractDream/AbstractDream.mp4" type="video/mp4">
     </video>
   </div>
   <!-- GALERIE -->
     <!-- <h2 calss="gallerie-title" style= "text-align: center;">Gallerie</h2> -->
   <div class="project_gallerie_container" style="display : none;">
-    <img src="./assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
-    <img src="./assets/Resilience/Entity.gif" class="project_gallerie_img" />
+    <img src="./portfolio-main/assets/Resilience/ObjectPositionning.gif" class="project_gallerie_img" />
+    <img src="./portfolio-main/assets/Resilience/Entity.gif" class="project_gallerie_img" />
   </div>
 
   <!-- BOUTONS -->
