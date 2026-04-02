@@ -71,9 +71,9 @@
   <div class="text-container">
     <h2>📖 Description</h2>
     <p>
-      Simdav Vr est un projet de simulation de défense maritime pour Naval Group réalisé pendant mon apprentissage chez Studio Nyx. le but 
+      Simdav VR est un projet de simulation de défense maritime pour Naval Group réalisé pendant mon apprentissage chez Studio Nyx. le but 
       de ce projet est d'entrainer les jeunes recrues à défendre un navire de guerre contre des attaques enemis. Il y a un poste instructeur qui configure la 
-      simulation et deux postes recrues qui vont devoir coopérer pour protéger le navire.
+      simulation et deux postes de recrues qui vont devoir coopérer pour protéger le navire.
     </p>
   </div>
 
@@ -105,10 +105,17 @@
       </p>
 
       <p>
-        👉 Solution : Création d'un pulling système d'entités neutre pour éviter de les instancier et les détruire pour plus d'optimisation.
-        Leurs déplacement constituent à avancer en ligne droite le long de leur couloir. Les entités neutres apparaissent (sortent de la queue) 
+        👉 Solution : Création d'un système d'object pooling pour les entités neutres par souci d'optimisation, ce qui évite de les instancier 
+        et les détruire au runtime.
+        Leurs déplacement constituent à avancer en ligne droite le long de leur couloir. Les entités neutres apparaissent (sortent de la pool) 
         à partir d'un point de spawn et disparaissent quand ils atteignent un un collider hors champs dans leur couloir.
       </p>
+
+      <p>
+        💡 Ce que j'améliorerai : Je combinerai peut être une factory method avec l'object pooling pour créer simplement plusieurs 
+        type d'entité neutre.
+      </p>
+
     </div>
 
     <div class="challenge-image">
@@ -130,6 +137,11 @@
         chaque "joueur". On peut ensuite sauvegarder cette configuration ce qui va créer un objet mission dans le menu 
         des missions et un fichier JSON contenant toutes les data de la configuration, à partir de la on peut soit lancer la mission 
         soit la modifier au quel cas on vas aussi modifier le JSON.
+      </p>
+
+      <p>
+        💡Ce que j'améliorerai : Je re factoriserai mon code en utilisant cette fois un pattern de commande, qui est plus en adéquation 
+        avec le principe de responsabilité unique.
       </p>
     </div>
 
