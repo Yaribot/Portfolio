@@ -51,17 +51,26 @@
   <div class="about-containers">
 
     <div class="details-container">
-      <h3>📅 Duration</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/calendar2-week-fill.svg" alt="Duration icon" class="project-icon" />
+        <h3>Duration</h3>
+      </div>
       <p>10 days</p>
     </div>
 
     <div class="details-container">
-      <h3>👥 Team</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/people-fill.svg" alt="Team icon" class="project-icon" />
+        <h3>Team</h3>
+      </div>
       <p>5 people</p>
     </div>
 
     <div class="details-container">
-      <h3>🛠️ Technologies</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/tools.svg" alt="Tech icon" class="project-icon" />
+        <h3>Technologies</h3>
+      </div>
       <p>Unity, C#</p>
     </div>
 
@@ -69,7 +78,10 @@
 
   <!-- DESCRIPTION -->
   <div class="text-container">
-    <h2>📖 Description</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/book-half.svg" alt="Description icon" class="project-icon" />
+      <h2>Description</h2>
+    </div>
     <p>
       Resilience is a game developed for Ubisoft’s Volunteer Game Jam.
       The player wakes up trapped inside a small, cluttered apartment. A mysterious entity accompanies them and gives a seemingly 
@@ -81,21 +93,27 @@
       leading to a key moment where the door finally opens, leaving behind what once kept the character trapped.
       Resilience is a project I worked on as a Gameplay Programmer and Technical Artist.
     </p>
-  </div>
+  </div><br>
 
   <!-- TON RÔLE -->
   <div class="text-container">
-    <h2>🎯 My role</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/people-circle.svg" alt="Role icon" class="project-icon" />
+      <h2>My role</h2>
+    </div>
     <p>
       - Gameplay Programmer<br>
       - Technical Artist<br>
       - Project Manager<br>
     </p>
-  </div>
+  </div><br>
 
   <!-- PROBLÈMES / SOLUTIONS -->
   <div class="text-container">
-    <h2>⚡ Challenges</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/lightning-fill.svg" alt="Challenges icon" class="project-icon" />
+      <h2>Challenges</h2>
+    </div>
     <p>
       The main challenges were to create a non-Euclidean space effect to trap the player inside the apartment. Each time the player tries to leave by opening the door, they find themselves back inside the apartment.
       Another challenge was implementing an object inspection system. 
@@ -105,7 +123,10 @@
   <div class="challenge-item">
 
     <div class="challenge-text">
-      <h3>🎯 Challenge: Creating a sense of confinement</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Challenge: Creating a sense of confinement</h3>
+      </div>
       <p>
         How can we create a feeling of confinement, as if the player were in a dream?
         The main difficulty was ensuring that the player could not leave the apartment before solving the puzzles.
@@ -113,14 +134,14 @@
       </p>
 
       <p>
-        👉 Solution : I created a non-Euclidean space effect using a shader applied to a textured plane acting as a portal.
+        ➤ Solution : I created a non-Euclidean space effect using a shader applied to a textured plane acting as a portal.
         The shader uses a secondary camera that simulates what the player sees through the portal.
         This camera mirrors the player’s position along the Z-axis and their rotation along the Y-axis. Creating the illusion 
         of looking through a portal to another space (in this case the apartment).
       </p>
 
       <p>
-        💡 What I would improve : With more time, I would refine the transition when passing through the portal to make it smoother and more immersive.
+        ➤ What I would improve : With more time, I would refine the transition when passing through the portal to make it smoother and more immersive.
       </p>
     </div>
 
@@ -133,20 +154,23 @@
   <div class="challenge-item reverse">
 
     <div class="challenge-text">
-      <h3>🎯 Challenge: Finding clues on objects</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Challenge: Finding clues on objects</h3>
+      </div>
       <p>
         To solve puzzles the player need to take objects and inspect them for clues.
       </p>
 
       <p>
-        👉 Solution : I developed an object inspection system allowing the player to pick up and rotate objects freely.
+        ➤ Solution : I developed an object inspection system allowing the player to pick up and rotate objects freely.
           When a clue is discovered, a sound cue is triggered along with a ripple visual effect.
           The system is based on a raycast from the center of the camera. When it hits an object, the object is displayed in front of the player.
           It is rendered using a secondary camera with camera stacking to prevent clipping issues with the environment.
       </p>
 
       <p>
-        💡 What I would improve : I would make clue discovery more intuitive by adding visual indicators on objects to highlight the location of clues.
+        ➤ What I would improve : I would make clue discovery more intuitive by adding visual indicators on objects to highlight the location of clues.
       </p>
     </div>
 

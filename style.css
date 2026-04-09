@@ -216,6 +216,12 @@ section {
   height: 2rem;
 }
 
+.project-icon {
+  cursor: pointer;
+  height: 1.5rem;
+  margin-right: 10px;
+}
+
 /* BUTTONS */
 
 .btn-container {
@@ -438,6 +444,16 @@ article .icon {
   height: 90%;
 }
 
+.align-icon-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-icon-title{
+  display: flex;
+  align-items: center;
+}
 
 /* CONTACT */
 

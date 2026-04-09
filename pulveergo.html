@@ -51,17 +51,26 @@
   <div class="about-containers">
 
     <div class="details-container">
-      <h3>📅 Duration</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/calendar2-week-fill.svg" alt="Duration icon" class="project-icon" />
+        <h3>Duration</h3>
+      </div>
       <p>11 month</p>
     </div>
 
     <div class="details-container">
-      <h3>👥 Team</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/people-fill.svg" alt="Team icon" class="project-icon" />
+        <h3>Team</h3>
+      </div>
       <p>3 people</p>
     </div>
 
     <div class="details-container">
-      <h3>🛠️ Technologies</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/tools.svg" alt="Tech icon" class="project-icon" />
+        <h3>Technologies</h3>
+      </div>
       <p>Unity, C#</p>
     </div>
 
@@ -69,7 +78,10 @@
 
   <!-- DESCRIPTION -->
   <div class="text-container">
-    <h2>📖 Description</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/book-half.svg" alt="Description icon" class="project-icon" />
+      <h2>Description</h2>
+    </div>
     <p>
       Pulve Ergo is a viticulture simulation project developed during my apprenticeship at Studio Nyx.
       The goal of the project is to raise awareness among pesticide sprayer manufacturers about user contamination risks.
@@ -77,20 +89,26 @@
       surfaces contaminated by toxic substances.
       The project was not fully completed during my time at Studio Nyx.
     </p>
-  </div>
+  </div><br>
 
   <!-- TON RÔLE -->
   <div class="text-container">
-    <h2>🎯 My role</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/people-circle.svg" alt="Role icon" class="project-icon" />
+      <h2>My role</h2>
+    </div>
     <p>
       - VR Gameplay Programmer<br>
       - UI Programmer<br>
     </p>
-  </div>
+  </div><br>
 
   <!-- PROBLÈMES / SOLUTIONS -->
   <div class="text-container">
-    <h2>⚡ Challenges</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/lightning-fill.svg" alt="Challenges icon" class="project-icon" />
+      <h2>Challenges</h2>
+    </div>
     <p>
       In addition to integrating VR object interaction systems, the main challenge was implementing a scene recording system 
       to analyze the simulation once it was completed.
@@ -100,13 +118,16 @@
   <div class="challenge-item">
 
     <div class="challenge-text">
-      <h3>🎯 Challenge: Scene recording system</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Challenge: Scene recording system</h3>
+      </div>
       <p>
         How can we record a Unity scene in order to replay it from multiple camera angles ?
       </p>
 
       <p>
-        👉 Solution : I implemented a system that captures object transforms (position, rotation, etc.) every frame.
+        ➤ Solution : I implemented a system that captures object transforms (position, rotation, etc.) every frame.
         During replay, the system reconstructs the scene by interpolating the recorded data.
         By placing multiple cameras in the scene, it becomes possible to review the simulation from different angles during playback.
       </p>
@@ -121,13 +142,16 @@
   <div class="challenge-item reverse" style="display : none;">
 
     <div class="challenge-text">
-      <h3>🎯 Problème : Intégrer et programmer l'UI</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Problème : Intégrer et programmer l'UI</h3>
+      </div>
       <p>
         Comment programmer l'Ui pour paramètrer la simulation (nombre et type d'entités ennemis, type d'armement, etc...)?
       </p>
 
       <p>
-        👉 Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
+        ➤ Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
         Pour le replay le systême rejoue par interpolation les datas capturés pour reconstruire l'action de la scène.
       </p>
     </div>

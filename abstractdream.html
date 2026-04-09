@@ -51,17 +51,26 @@
   <div class="about-containers">
 
     <div class="details-container">
-      <h3>📅 Duration</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/calendar2-week-fill.svg" alt="Duration icon" class="project-icon" />
+        <h3>Duration</h3>
+      </div>
       <p>1 week</p>
     </div>
 
     <div class="details-container">
-      <h3>👥 Team</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/people-fill.svg" alt="Team icon" class="project-icon" />
+        <h3>Team</h3>
+      </div>
       <p>1 person</p>
     </div>
 
     <div class="details-container">
-      <h3>🛠️ Technologies</h3>
+      <div class = "align-icon-text">
+        <img src="./portfolio-main/assets/tools.svg" alt="Tech icon" class="project-icon" />
+        <h3>Technologies</h3>
+      </div>
       <p>Unity, C#</p>
     </div>
 
@@ -69,27 +78,36 @@
 
   <!-- DESCRIPTION -->
   <div class="text-container">
-    <h2>📖 Description</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/book-half.svg" alt="Description icon" class="project-icon" />
+      <h2>Description</h2>
+    </div>
     <p>
       Abstract Dream is a small project focused on level design.
       The goal of the project was to explore perspective and use it to mislead the player.
       The isometric view can create situations where the player believes they can jump from one platform to another, 
       only to realize that the jump is impossible because the target platform is actually farther away than it appears.
     </p>
-  </div>
+  </div><br>
 
   <!-- TON RÔLE -->
   <div class="text-container">
-    <h2>🎯 My role</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/people-circle.svg" alt="Role icon" class="project-icon" />
+      <h2>My role</h2>
+    </div>
     <p>
       - Gameplay Programmer<br>
       - UI Programmer<br>
     </p>
-  </div>
+  </div><br>
 
   <!-- PROBLÈMES / SOLUTIONS -->
   <div class="text-container">
-    <h2>⚡ Challenges</h2>
+    <div class = "align-icon-title">
+      <img src="./portfolio-main/assets/lightning-fill.svg" alt="Challenges icon" class="project-icon" />
+      <h2>Challenges</h2>
+    </div>
     <p>
       The main challenge of this project was creating a shader that allows the player to be visible through walls. 
     </p>
@@ -98,7 +116,10 @@
   <div class="challenge-item">
 
     <div class="challenge-text">
-      <h3>🎯 Challenge: Seeing the player through walls</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Challenge: Seeing the player through walls</h3>
+      </div>
       <p>
       This shader, applied to environment objects, works as a mask based on the player’s position.
       It is triggered using a raycast from the camera to the player. If the ray hits a wall using the shader, 
@@ -116,13 +137,16 @@
   <div class="challenge-item reverse" style="display : none;">
 
     <div class="challenge-text">
-      <h3>🎯 Problème : Intégrer et programmer l'UI</h3>
+      <div class = "align-icon-title">
+        <img src="./portfolio-main/assets/bullseye.svg" alt="Challenges icon" class="project-icon" />
+        <h3>Problème : Intégrer et programmer l'UI</h3>
+      </div>
       <p>
         Comment programmer l'Ui pour paramètrer la simulation (nombre et type d'entités ennemis, type d'armement, etc...)?
       </p>
 
       <p>
-        👉 Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
+        ➤ Solution : Intégrer un systeme de capture de transform d'objets (Position,rotation, etc...) à chaque frame. 
         Pour le replay le systême rejoue par interpolation les datas capturés pour reconstruire l'action de la scène.
       </p>
     </div>
