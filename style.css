@@ -302,9 +302,6 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
-}
-
-.text-container{
   margin-right: 20rem;
   margin-left: 20rem;
 }
@@ -546,7 +543,7 @@ article .icon {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .text-container{
+  .about-details-container{
     margin : auto;
   }
 }
@@ -556,7 +553,7 @@ article .icon {
     grid-template-columns: 1fr;
   }
 
-  .text-container{
+  .about-details-container{
     /* display : flex; */
     margin : auto;
   }
