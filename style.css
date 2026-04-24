@@ -304,6 +304,11 @@ section {
   flex-direction: column;
 }
 
+.text-container{
+  margin-right: 20rem;
+  margin-left: 20rem;
+}
+
 .about-containers,
 .about-details-container {
   display: flex;
@@ -540,11 +545,20 @@ article .icon {
   .about-project-card-containers {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .text-container{
+    margin : auto;
+  }
 }
 
 @media (max-width: 768px) {
   .about-project-card-containers {
     grid-template-columns: 1fr;
+  }
+
+  .text-container{
+    /* display : flex; */
+    margin : auto;
   }
 }
 
